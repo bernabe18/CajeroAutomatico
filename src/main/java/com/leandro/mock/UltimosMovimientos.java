@@ -1,7 +1,9 @@
+package com.leandro.mock;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class UltimosMovimientos {
+
     private static final String TRASFERENCIA ="transferencia de ";
     private static final String INGRESO="Ingreso de ";
     private static final String RETIRADA="Retiro de ";
@@ -9,7 +11,7 @@ public class UltimosMovimientos {
     private static final String NOMINA="Ingreso nómina de ";
     private static final String PAGO_RECIBO="Pago de recibo de ";
 
-    ArrayList<String> obtenerMovimientos(int numeroDeMovimiento,String moneda){
+   public ArrayList<String> obtenerMovimientos(int numeroDeMovimiento,String moneda){
         ArrayList<String> movimientos = new ArrayList<>();
         for (int i = 0; i < numeroDeMovimiento; i++) {
             int aleatorioTipo = obtenerIntAleatorio(1, 5);

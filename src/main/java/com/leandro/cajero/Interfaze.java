@@ -1,3 +1,4 @@
+package com.leandro.cajero;
 import java.util.Scanner;
 public class Interfaze {
     public static void main(String[] arg){
